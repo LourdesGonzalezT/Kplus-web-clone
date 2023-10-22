@@ -156,12 +156,12 @@ a {
 }
 
 .footer-container {
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
   font-size: 0.8em;
-  padding: 3% 15% 3% 15%;
+  padding: 3% 0%;
 }
 
 .footer-container h3 {
@@ -170,8 +170,8 @@ a {
 }
 
 .map-container {
-  width: 100%;
-
+  width: 50%;
+  margin-left: 15%;
 }
 
 iframe {
@@ -185,8 +185,9 @@ iframe {
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 0 25% 0% 5%;
+  width: 50%;
+
+  margin-right: 15%;
 }
 
 .form-group {
@@ -243,8 +244,10 @@ button:hover {
 .social-media {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10% 30% 5% 30%
+  justify-content: center;
+  /* padding: 10% 25% 5% 25%; */
+  gap: 15px;
+  padding: 10%;
 }
 
 .social-logo img {
@@ -295,10 +298,16 @@ footer h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
-
   }
 
+  .map-container {
+    width: 80%;
+  }
+
+  .form-container {
+    width: 70%;
+    margin-left: 20%;
+  }
 }
 
 /* Estilos movil */
