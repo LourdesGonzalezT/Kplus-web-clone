@@ -216,6 +216,9 @@ p {
   height: 40px;
   border-radius: 20px;
   border: 0;
+  padding-left: 10px;
+  font-size: 1.2em;
+  
 }
 
 .newsletter {
@@ -258,7 +261,6 @@ button:hover {
 .social-logo img:hover {
   transform: scale(1.2);
   filter: contrast(0%) sepia(1) hue-rotate(20deg) saturate(1000%);
-  ;
 
 }
 
@@ -270,12 +272,31 @@ footer h4 {
   padding: 1% 0%;
 }
 
+#button-arrow {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#button-arrow.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 @media (max-width:920px) {
-
-  body {
-    background-color: aqua;
-  }
 
   .container-main {
     display: flex;
@@ -312,7 +333,5 @@ footer h4 {
 
 /* Estilos movil */
 @media (max-width:680px) {
-  body {
-    background-color: rgb(232, 149, 243);
-  }
+
 }
